@@ -2,7 +2,7 @@ struct EERTREE {
     static const int MS = 1e6 + 5;
     static const int C = 26;
 
-    int n, cntNode, last, s[MS], len[MS], fail[MS], cnt[MS], ch[C][C];
+    int n, cntNode, last, s[MS], len[MS], fail[MS], cnt[MS], ch[MS][C];
 
     int make(int l) {
         for(int i = 0; i < C; ++i) ch[cntNode][i] = 0;
